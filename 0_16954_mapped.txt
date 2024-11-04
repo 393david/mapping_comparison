@@ -1,5 +1,7 @@
- This file shows one query read mapped by mapAlign and miniamp2. The header of this read is:  m140612_020550_42156_c100652082550000001823118110071460_s1_p0/456/0_16954, with length of 16,954 bp.
- mapAlign just reports one alignment result, the mapping similarity is ~0.7557. A part region of this read (from 4 to 3871, starting form 0) also have a ~0.8964 similarity to another chromosome, see line 1,323, this supplementary alignment can be produced by minimap2, but mapAlign fails to get the mapping result.
+This file shows one query read mapped by mapAlign and miniamp2. 
+The header of this read is:  m140612_020550_42156_c100652082550000001823118110071460_s1_p0/456/0_16954, length: 16,954 bp.
+mapAlign just reports one alignment result, the mapping similarity is ~0.7557 (line 14). 
+A part region of this read (from 4 to 3871, starting from 0) also have a ~0.8964 similarity to another chromosome (see line 1,325), this supplementary alignment can be produced by minimap2, but mapAlign fails to get the mapping result.
  
  
  mapAlign mapping result:
@@ -1320,7 +1322,7 @@ Target    17236020 G 17236020
 
 
 
-minimap2's secondary mapping result:
+minimap2's supplementary mapping result:
 
  Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/456/0_16954
  nMatch:     3645(0.896458)
