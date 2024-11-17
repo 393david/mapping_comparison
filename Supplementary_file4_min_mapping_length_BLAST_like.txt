@@ -1,0 +1,243 @@
+This file shows the min mapping length for all methods. The position (index) in the query and target is 0-based.
+
+Method         Identity      Length       Line number in this file
+
+BWA-MEM        1             42           20
+NGMLR          0.93          31           37
+minimap2       0.98          51           55
+mapAlign       0.83          109          73
+lra            1             10           99
+os-minimap2    0.98          53           117
+Winnowmap2     1             82           135
+mm2-fast       0.98          51           157
+PSS            0.96          49           175
+VACmap         0.92          50           193
+invMap         1             11           211
+pathMap:       1             41           229
+
+
+============================================================================================
+BWA-MEM min length: 42
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/18942/2523_37586
+ nMatch:     42(1.0)
+ nInsert:    0(0.0)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 1.0
+ Target:     X
+ Strand:     plus
+ Range:      3973 -> 4014 of 35063, target: 76841040 -> 76841081 of 155270560
+
+Target    76841040 CCCCCACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 76841081
+                   ||||||||||||||||||||||||||||||||||||||||||
+ Query        3973 CCCCCACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4014
+
+
+============================================================================================
+NGMLR min length: 31
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/5440/11196_11308
+ nMatch:     29(0.935483)
+ nInsert:    2(0.064516)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 0.9354838709677419
+ Target:     X
+ Strand:     minus
+ Range:      54 -> 84 of 112, target: 113421822 -> 113421850 of 155270560
+ 
+Target   113421822 ACTTA-TA-TGTGAATTTTCTTCTGCCTCTG 113421850
+                   ||||| || ||||||||||||||||||||||
+ Query          54 ACTTATTACTGTGAATTTTCTTCTGCCTCTG 84
+
+
+============================================================================================
+minimap2 min length: 51
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/10132/1258_6873
+ nMatch:     50(0.980392)
+ nInsert:    1(0.019607)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 0.9803921568627451
+ Target:     19
+ Strand:     minus
+ Range:      896 -> 946 of 5615, target: 24629935 -> 24629984 of 59128983
+ 
+Target    24629935 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGA-TAT 24629984
+                   ||||||||||||||||||||||||||||||||||||||||||||||| |||
+ Query         896 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGATTAT 946
+
+
+============================================================================================
+mapAlign min length: 109
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/14439/16404_16513
+ nMatch:     103(0.830645)
+ nInsert:    6(0.048387)
+ nDelete:    15(0.120967)
+ nMismatch:  0(0.0)
+ Similarity: 0.8306451612903226
+ Target:     11
+ Strand:     minus
+ Range:      0 -> 108 of 109, target: 22660271 -> 22660388 of 135006516
+ 
+Target    22660271 TTATTTTTACTCTGAACAATATTAT-ATTCAAGGACATGCACACCAATTACAGCT-CTCT 22660328
+                   | ||    ||||||||||||||||| ||||||||||||||||||||||||| ||| ||||
+ Query           0 T-AT----ACTCTGAACAATATTATTATTCAAGGACATGCACACCAATTAC-GCTTCTCT 53
+ 
+Target    22660329 GCTTGAT--GAAATAATATTTCT-TTATATGAACAAGTAGAATTGGACTCCACA-TCTTC 22660384
+                    |||||||  ||| |||||||| | |||||||| |||||||||||||| || ||| |||||
+ Query          54 GCTTGATTTGAA-TAATATTT-TCTTATATGA-CAAGTAGAATTGGA-TC-ACAGTCTTC 108
+ 
+Target    22660385 AGAC 22660388
+                        
+ Query         108 ---- 108
+
+
+============================================================================================
+lra min length: 10
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/8789/36841_44698
+ nMatch:     10(1.0)
+ nInsert:    0(0.0)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 1.0
+ Target:     11
+ Strand:     minus
+ Range:      7099 -> 7108 of 7857, target: 64984277 -> 64984286 of 135006516
+ 
+Target    64984277 GGGTGAGTGA 64984286
+                   ||||||||||
+ Query        7099 GGGTGAGTGA 7108
+
+
+============================================================================================
+os-minimap2 min length: 53
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/16058/7632_14763
+ nMatch:     52(0.981132)
+ nInsert:    1(0.018867)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 0.9811320754716981
+ Target:     13
+ Strand:     minus
+ Range:      5917 -> 5969 of 7131, target: 100759397 -> 100759448 of 115169878
+ 
+Target   100759397 TTAACTCATTTCTTATTCCACATTTTATCAGT-GACTTACATCATGTGCAAAT 100759448
+                   |||||||||||||||||||||||||||||||| ||||||||||||||||||||
+ Query        5917 TTAACTCATTTCTTATTCCACATTTTATCAGTAGACTTACATCATGTGCAAAT 5969
+
+
+============================================================================================
+Winnowmap2 min length: 82
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/15707/15664_21189
+ nMatch:     82(1.0)
+ nInsert:    0(0.0)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 1.0
+ Target:     15
+ Strand:     plus
+ Range:      446 -> 527 of 5525, target: 77910867 -> 77910948 of 102531392
+ 
+Target    77910867 TTCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT 77910926
+                   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ Query         446 TTCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT 505
+ 
+Target    77910927 TTTTTTTTTTTTTTTTTTTTTT 77910948
+                   ||||||||||||||||||||||
+ Query         506 TTTTTTTTTTTTTTTTTTTTTT 527
+
+
+============================================================================================
+mm2-fast min length: 51
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/10132/1258_6873
+ nMatch:     50(0.980392)
+ nInsert:    1(0.019607)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 0.9803921568627451
+ Target:     19
+ Strand:     minus
+ Range:      896 -> 946 of 5615, target: 24629935 -> 24629984 of 59128983
+ 
+Target    24629935 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGA-TAT 24629984
+                   ||||||||||||||||||||||||||||||||||||||||||||||| |||
+ Query         896 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGATTAT 946
+
+
+============================================================================================
+PSS min length: 49
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/4623/1381_10765
+ nMatch:     49(0.960784)
+ nInsert:    0(0.0)
+ nDelete:    2(0.039215)
+ nMismatch:  0(0.0)
+ Similarity: 0.9607843137254902
+ Target:     8
+ Strand:     plus
+ Range:      1051 -> 1099 of 9384, target: 71454334 -> 71454384 of 146364022
+ 
+Target    71454334 TGGAAGTAACTAACTGGTTTTGATTTTATGGGCTCATGGGTGGAAGAGGCA 71454384
+                   ||||| ||||||||| |||||||||||||||||||||||||||||||||||
+ Query        1051 TGGAA-TAACTAACT-GTTTTGATTTTATGGGCTCATGGGTGGAAGAGGCA 1099
+
+
+============================================================================================
+VACmap min length: 50
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/14683/3065_23292
+ nMatch:     46(0.92)
+ nInsert:    3(0.06)
+ nDelete:    0(0.0)
+ nMismatch:  1(0.02)
+ Similarity: 0.92
+ Target:     2
+ Strand:     plus
+ Range:      5118 -> 5167 of 20227, target: 83465658 -> 83465704 of 243199373
+ 
+Target    83465658 TACAAAAATTAGTCG---GGTATGGTAGCAGGCACCTGTAATCCCAGCTG 83465704
+                   |||||||||||||||   *|||||||||||||||||||||||||||||||
+ Query        5118 TACAAAAATTAGTCGCCTTGTATGGTAGCAGGCACCTGTAATCCCAGCTG 5167
+
+
+============================================================================================
+invmap min length: 11
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/7281/15934_29296
+ nMatch:     11(1.0)
+ nInsert:    0(0.0)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 1.0
+ Target:     2
+ Strand:     minus
+ Range:      986 -> 996 of 13362, target: 142915093 -> 142915103 of 243199373
+ 
+ Target   142915093 TATCCTCATAA 142915103
+                    |||||||||||
+  Query         986 TATCCTCATAA 996
+
+
+============================================================================================
+pathMap min length: 41
+
+ Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/18256/16770_40261
+ nMatch:     41(1.0)
+ nInsert:    0(0.0)
+ nDelete:    0(0.0)
+ nMismatch:  0(0.0)
+ Similarity: 1.0
+ Target:     2
+ Strand:     minus
+ Range:      8418 -> 8458 of 23491, target: 33141440 -> 33141480 of 243199373
+ 
+Target    33141440 GGGGGGGGGGGGGGGGGGGGGGGGGGGAGGGGGGGGGGGGG 33141480
+                   |||||||||||||||||||||||||||||||||||||||||
+ Query        8418 GGGGGGGGGGGGGGGGGGGGGGGGGGGAGGGGGGGGGGGGG 8458
