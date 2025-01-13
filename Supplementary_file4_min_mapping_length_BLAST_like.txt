@@ -2,18 +2,22 @@ This file shows the min mapping length for all methods. The position (index) in 
 
 Method         Identity      Length       Line number in this file
 
-BWA-MEM        1             42           20
-NGMLR          0.93          31           37
-minimap2       0.98          51           55
-mapAlign       0.83          109          73
-lra            1             10           99
-os-minimap2    0.98          53           117
-Winnowmap2     1             82           135
-mm2-fast       0.98          51           157
-PSS            0.96          49           175
-VACmap         0.92          50           193
-invMap         1             11           211
-pathMap:       1             41           229
+BWA-MEM        1             42           24
+GraphMap       0.7589        104          41
+Kart           0.5333        30           63
+NGMLR          0.93          31           81
+minimap2       0.98          51           99
+lordFAST       1             18           117
+mapAlign       0.83          109          135
+lra            1             10           161
+os-minimap2    0.98          53           179
+BWA-MEME       1             30           197
+Winnowmap2     1             82           215
+mm2-fast       0.98          51           237
+PSS            0.96          49           255
+VACmap         0.92          50           273
+invMap         1             11           291
+pathMap:       1             41           309
 
 
 ============================================================================================
@@ -31,6 +35,46 @@ BWA-MEM min length: 42
 Target    76841040 CCCCCACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 76841081
                    ||||||||||||||||||||||||||||||||||||||||||
  Query        3973 CCCCCACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4014
+
+
+============================================================================================
+GraphMap min length: 104
+
+  Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/19154/11380_11486
+  nMatch:     85(0.758928)
+  nInsert:    6(0.053571)
+  nDelete:    8(0.071428)
+  nMismatch:  13(0.116071)
+  Similarity: 0.7589285714285714
+  Target:     4
+  Strand:     minus
+  Range:      1 -> 104 of 106, target: 44826300 -> 44826405 of 191154276
+ 
+ Target    44826300 AATGCCTAGTTTGAGGAGAGTCAGGGGGAAAGAGGTACTTTTCTGAAGTAGAGAGCTGTC 44826359
+                    ||||||||||*|||||||| |||||*||**|| ||***||||||||| ||||||||||||
+  Query           1 AATGCCTAGTCTGAGGAGA-TCAGGAGGTCAG-GGGGGTTTTCTGAA-TAGAGAGCTGTC 57
+ 
+ Target    44826360 -TTTGACTTG-GCAAGT-C-CTC-ATAGGGTATAACAAGGAAAG-CATTAAA 44826405
+                     ||||||||| | |||| | |*| |||***| |||   |||||| ||**|||
+  Query          58 TTTTGACTTGTG-AAGTGCGCGCTATACATT-TAA---GGAAAGTCAGGAAA 104
+
+
+============================================================================================
+Kart min length: 30
+
+  Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/14943/0_742
+  nMatch:     16(0.533333)
+  nInsert:    0(0.0)
+  nDelete:    0(0.0)
+  nMismatch:  14(0.466666)
+  Similarity: 0.5333333333333333
+  Target:     4
+  Strand:     minus
+  Range:      0 -> 29 of 742, target: 183766582 -> 183766611 of 191154276
+ 
+ Target   183766582 ATTTCTTTTTCTTTCTTTTCTTTTCTTTCT 183766611
+                    **||**||||**||**|||**|||**||**
+  Query           0 GATTTCTTTTTCTTTCTTTTCTTTTCTTTC 29
 
 
 ============================================================================================
@@ -67,6 +111,24 @@ minimap2 min length: 51
 Target    24629935 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGA-TAT 24629984
                    ||||||||||||||||||||||||||||||||||||||||||||||| |||
  Query         896 TGATAGAGCAGTTTTGAAACACTCTTTCTGTAGAGTCTGCAAGTGGATTAT 946
+
+
+============================================================================================
+lordFAST min length: 18
+
+  Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/7767/11768_18462
+  nMatch:     18(1.0)
+  nInsert:    0(0.0)
+  nDelete:    0(0.0)
+  nMismatch:  0(0.0)
+  Similarity: 1.0
+  Target:     1
+  Strand:     plus
+  Range:      6676 -> 6693 of 6694, target: 69337778 -> 69337795 of 249250621
+ 
+ Target    69337778 GAGAGATCTTTGCTTGCC 69337795
+                    ||||||||||||||||||
+  Query        6676 GAGAGATCTTTGCTTGCC 6693
 
 
 ============================================================================================
@@ -129,6 +191,24 @@ os-minimap2 min length: 53
 Target   100759397 TTAACTCATTTCTTATTCCACATTTTATCAGT-GACTTACATCATGTGCAAAT 100759448
                    |||||||||||||||||||||||||||||||| ||||||||||||||||||||
  Query        5917 TTAACTCATTTCTTATTCCACATTTTATCAGTAGACTTACATCATGTGCAAAT 5969
+
+
+============================================================================================
+BWA-MEME min length: 30
+
+  Query:      m140612_020550_42156_c100652082550000001823118110071460_s1_p0/967/16737_29744
+  nMatch:     30(1.0)
+  nInsert:    0(0.0)
+  nDelete:    0(0.0)
+  nMismatch:  0(0.0)
+  Similarity: 1.0
+  Target:     3
+  Strand:     plus
+  Range:      258 -> 287 of 301, target: 121667543 -> 121667572 of 198022430
+ 
+ Target   121667543 CCTTGGCTTCCCAAAAAGCTGGGATTACAG 121667572
+                    ||||||||||||||||||||||||||||||
+  Query         258 CCTTGGCTTCCCAAAAAGCTGGGATTACAG 287
 
 
 ============================================================================================
